@@ -7,23 +7,27 @@ Extend the `vtex` toolbelt!
 1. Clone `vtex/toolbelt` and follow the steps on the Contributing section.
 2. Clone/Create a plugin with this template.
 3. Change the template name under this project's `package.json`.
-2. Run `yarn link` on this project.
-3. Now run `vtex link @vtex/cli-plugin-template` (or the new name) on the `vtex/toolbelt` project.
-4. Run `yarn watch` on the `vtex/toolbelt`
-5. Test the command on a VTEX IO app with `vtex-test hello`
+4. Run `yarn link` on this project.
+5. Now run `vtex link @vtex/cli-plugin-template` (or the new name) on the `vtex/toolbelt` project.
+6. Run `yarn watch` on the `vtex/toolbelt`
+7. Test the command on a VTEX IO app with `vtex-test hello`
 
 For more information, read [Ocliff Docs](https://oclif.io/docs/introduction).
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-template)
+![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-redirects)
 
 <!-- toc -->
-* [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @vtex/cli-plugin-template
 $ oclif-example COMMAND
@@ -35,10 +39,14 @@ USAGE
   $ oclif-example COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+
+- [`oclif-example hello [FILE]`](#oclif-example-hello-file)
 
 ## `oclif-example hello [FILE]`
 
@@ -59,4 +67,5 @@ EXAMPLE
   $ oclif-example hello
   hello world from ./src/hello.ts!
 ```
+
 <!-- commandsstop -->
