@@ -1,4 +1,4 @@
-# VTEX CLI Plugin Template
+# VTEX CLI Plugin Redirects
 
 Extend the `vtex` toolbelt!
 
@@ -18,14 +18,16 @@ For more information, read [Ocliff Docs](https://oclif.io/docs/introduction).
 ![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-redirects)
 
 <!-- toc -->
-* [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @vtex/cli-plugin-redirects
 $ oclif-example COMMAND
@@ -37,14 +39,16 @@ USAGE
   $ oclif-example COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`oclif-example redirects:delete CSVPATH`](#oclif-example-redirectsdelete-csvpath)
-* [`oclif-example redirects:export CSVPATH`](#oclif-example-redirectsexport-csvpath)
-* [`oclif-example redirects:import CSVPATH`](#oclif-example-redirectsimport-csvpath)
+
+- [`oclif-example redirects:delete CSVPATH`](#oclif-example-redirectsdelete-csvpath)
+- [`oclif-example redirects:export CSVPATH`](#oclif-example-redirectsexport-csvpath)
+- [`oclif-example redirects:import CSVPATH`](#oclif-example-redirectsimport-csvpath)
 
 ## `oclif-example redirects:delete CSVPATH`
 
@@ -103,4 +107,5 @@ EXAMPLE
 ```
 
 _See code: [build/commands/redirects/import.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.0.1-beta/build/commands/redirects/import.ts)_
+
 <!-- commandsstop -->
