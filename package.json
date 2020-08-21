@@ -1,7 +1,7 @@
 {
   "name": "@vtex/cli-plugin-redirects",
   "description": "vtex plugin redirects",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bugs": "https://github.com/vtex/cli-plugin-redirects/issues",
   "dependencies": {
     "@oclif/command": "^1",
@@ -13,6 +13,7 @@
     "@types/ramda": "^0.27.14",
     "json-array-split": "^1.0.0",
     "json2csv": "^5.0.1",
+    "progress": "^2.0.3",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -33,7 +34,7 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8",
     "typescript": "^3.8.2",
-    "vtex": "^2.106.5-beta.0"
+    "vtex": "^2.110.0"
   },
   "engines": {
     "node": ">=8.0.0"
