@@ -31,7 +31,7 @@ $ npm install -g @vtex/cli-plugin-redirects
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-redirects/0.0.2 linux-x64 node-v12.18.3
+@vtex/cli-plugin-redirects/0.1.1 linux-x64 node-v12.21.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -48,11 +48,14 @@ USAGE
 
 ## `oclif-example redirects:delete CSVPATH`
 
-Delete redirects in the current account and workspace
+Deletes redirects from the current account and workspace.
 
 ```
 USAGE
   $ oclif-example redirects:delete CSVPATH
+
+ARGUMENTS
+  CSVPATH  CSV file containing the URL paths to delete.
 
 OPTIONS
   -h, --help     show CLI help
@@ -63,15 +66,18 @@ EXAMPLE
   vtex redirects delete csvPath
 ```
 
-_See code: [build/commands/redirects/delete.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.0.2/build/commands/redirects/delete.ts)_
+_See code: [build/commands/redirects/delete.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.1.1/build/commands/redirects/delete.ts)_
 
 ## `oclif-example redirects:export CSVPATH`
 
-Export all redirects in the current account and workspace
+Exports all redirects defined in the current account and workspace to a CSV file.
 
 ```
 USAGE
   $ oclif-example redirects:export CSVPATH
+
+ARGUMENTS
+  CSVPATH  Name of the CSV file.
 
 OPTIONS
   -h, --help     show CLI help
@@ -82,19 +88,22 @@ EXAMPLE
   vtex redirects export csvPath
 ```
 
-_See code: [build/commands/redirects/export.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.0.2/build/commands/redirects/export.ts)_
+_See code: [build/commands/redirects/export.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.1.1/build/commands/redirects/export.ts)_
 
 ## `oclif-example redirects:import CSVPATH`
 
-Import redirects for the current account and workspace
+Imports redirects from a CSV file to the current account and workspace.
 
 ```
 USAGE
   $ oclif-example redirects:import CSVPATH
 
+ARGUMENTS
+  CSVPATH  Name of the CSV file.
+
 OPTIONS
   -h, --help     show CLI help
-  -r, --reset    Remove all previous redirects
+  -r, --reset    Removes all redirects previously defined.
   -v, --verbose  Show debug level logs
   --trace        Ensure all requests to VTEX IO are traced
 
@@ -102,5 +111,5 @@ EXAMPLE
   vtex redirects import csvPath
 ```
 
-_See code: [build/commands/redirects/import.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.0.2/build/commands/redirects/import.ts)_
+_See code: [build/commands/redirects/import.ts](https://github.com/vtex/cli-plugin-redirects/blob/v0.1.1/build/commands/redirects/import.ts)_
 <!-- commandsstop -->

@@ -8,9 +8,9 @@ on:
       - '**'
 jobs:
   prepack:
-    name: prepack
-    runs-on: ubuntu-latest
-    steps:
+      name: prepack
+      runs-on: ubuntu-latest
+      steps: 
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Set up Node.js
@@ -18,13 +18,15 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: npm install
+        run: yarn install
       - name: Update README
         run: yarn prepack
+      - name: Remove color char from README
+        run: curl 'https://vtex-toolbelt-test.s3.us-east-2.amazonaws.com/removeTerminalColorFromFile.sh' > tmpColorScrip.sh && bash tmpColorScrip.sh && rm tmpColorScrip.sh
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
-          message: 'Automatic update on Toolbelt plugin documentation'
-          add: 'README.md'
+          message: "Automatic update on Toolbelt plugin documentation"
+          add: "README.md"
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

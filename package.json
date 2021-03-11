@@ -1,7 +1,7 @@
 {
   "name": "@vtex/cli-plugin-redirects",
   "description": "vtex plugin redirects",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "bugs": "https://github.com/vtex/cli-plugin-redirects/issues",
   "dependencies": {
     "@oclif/command": "^1",
@@ -58,7 +58,7 @@
     ],
     "topics": {
       "redirects": {
-        "description": "Redirects commands. Run 'vtex redirects' to see all subcommands"
+        "description": "Imports, exports, or removes redirects from the current account and workspace. Run 'vtex redirects' to see all 3 subcommands."
       }
     }
   },
