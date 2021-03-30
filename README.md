@@ -48,7 +48,7 @@ USAGE
 
 ## `oclif-example redirects:delete CSVPATH`
 
-Deletes redirects from the current [38;5;149maccount and [38;5;149mworkspace.
+Deletes redirects from the current account and workspace.
 
 ```
 USAGE
@@ -70,7 +70,7 @@ _See code: [build/commands/redirects/delete.ts](https://github.com/vtex/cli-plug
 
 ## `oclif-example redirects:export CSVPATH`
 
-Exports all redirects defined in the current [38;5;149maccount and [38;5;149mworkspace to a CSV file.
+Exports all redirects defined in the current account and workspace to a CSV file.
 
 ```
 USAGE
@@ -92,7 +92,7 @@ _See code: [build/commands/redirects/export.ts](https://github.com/vtex/cli-plug
 
 ## `oclif-example redirects:import CSVPATH`
 
-Imports redirects from a CSV file to the current [38;5;149maccount and [38;5;149mworkspace.
+Imports redirects from a CSV file to the current account and workspace.
 
 ```
 USAGE
